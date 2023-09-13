@@ -236,8 +236,6 @@ def copygenerate(caption):
     hashtagslist = hashtags.split(' ')
     hashtags = ' '.join(removedupe(hashtagslist))
 
-    print(captiongroup["instagram"])
-
     finishedcaptioncode = f'IG:\n{captiongroup["instagram"]}\n\nTH:\n{captiongroup["threads"]}\n\nFB:\n{captiongroup["facebook"]}\n\nX:\n{captiongroup["x"]}\n\nHashtags:\n{hashtags}'
     return finishedcaptioncode
 
