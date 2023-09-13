@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Other
+{% endblock %}
+
+{% block main %}
+<div id="generaltags" class="container">
+    <label for="generatedCopy">General Tags:</label>
+    <div class="card card-body edittags">
+        <p class="editvaluetags" id="generatedCopy">{{ tags }}</p>
+        <input type="text" class="form-control textedittags" value="{{ tags }}" id="generaltags">
+    </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,20 @@
+.textedit {
+    display: none;
+}
+
+.textedittags {
+    display: none;
+}
+
+.hiddenvalue {
+    display: none;
+}
+
+.inner {
+    display: none;
+    position:absolute;
+    text-align: center;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Copy Generator
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="copyBox">Copy Box:</label>
+                <textarea class="form-control" id="copybox" rows="8" autofocus>{{ caption }}</textarea>
+            </div>
+        </div>
+        <div class="col">
+            <label for="generatedCopy">Generated Copy:</label>
+            <div class="card" onclick="copyText()">
+                <div class="card card-body inner" id="copied">Copied to Clipboard!</div>
+                <div style="white-space: pre-line;" class="card-body" id="generatedCopy">Exit text area to generate!</div>
+                
+            </div>
+            <div class="hiddenvalue" id="hiddenvalue"></div>
+        </div>
+    </div>
+</div>
+
+<div id="database"></div>
+{% endblock %}
