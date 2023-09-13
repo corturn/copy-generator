@@ -13,9 +13,9 @@ $(document).ready(function() {
             success:function(response){
                if(response.success == 1){ 
                 copy = response.copy;
+                var decodedCopy = decodeHtml(copy);
 
-                //$('#hiddenvalue').html(copyplain);
-                $('#generatedCopy').text(copy);
+                $('#generatedCopy').text(decodedCopy);
             
                }else{ 
                   alert("not generated sucessfully");
@@ -247,4 +247,10 @@ function copyText() {
     navigator.clipboard.writeText(copy);
     $('#copied').show();
     $('#copied').delay(1000).fadeOut();
+}
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
 }
