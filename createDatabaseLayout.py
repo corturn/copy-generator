@@ -1,5 +1,7 @@
 import sqlite3
 
+# Create database with file name 'artists.db'
+
 connect = sqlite3.connect('artists.db')
 
 data = connect.cursor()
